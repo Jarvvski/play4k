@@ -3,11 +3,11 @@ plugins {
 }
 
 dependencies {
-    implementation("org.apache.commons:commons-text")
+    implementation(libs.bundles.k4)
     implementation(project(":utilities"))
 }
 
 application {
     // Define the main class for the application.
-    mainClass = "org.example.app.AppKt"
+    mainClass = "com.github.jarvvski.play4k.AppKt"
 }

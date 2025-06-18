@@ -4,5 +4,5 @@ plugins {
 
 rootProject.name = "play4k"
 
-include("app")
+include("state-machine")
 include("utilities")

@@ -1,5 +1,15 @@
 [versions]
 kotlin-gradle-plugin = "2.1.20"
+forkhandles = "2.+"
 
 [libraries]
 kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin-gradle-plugin" }
+k4-state = { module = "dev.forkhandles:state4k", version.ref = "forkhandles" }
+k4-result = { module = "dev.forkhandles:result4k", version.ref = "forkhandles" }
+k4-ropes = { module = "dev.forkhandles:ropes4k", version.ref = "forkhandles" }
+k4-values = { module = "dev.forkhandles:values4k", version.ref = "forkhandles" }
+k4-time4k = { module = "dev.forkhandles:time4k", version.ref = "forkhandles" }
+
+[bundles]
+k4 = ["k4-state", "k4-result", "k4-ropes", "k4-time4k", "k4-values"]
+

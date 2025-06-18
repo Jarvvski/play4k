@@ -1,0 +1,16 @@
+# MacOS shite
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Jetbrains shite
+*.iml
+*.ipr
+*.iws
+/.idea/*
+
+# Gradle Cache
+.gradle
+
+# Outputs
+**/build/

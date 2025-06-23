@@ -1,15 +1,24 @@
 [versions]
-kotlin-gradle-plugin = "2.1.20"
+kotlin = "2.1.20"
 forkhandles = "2.+"
+spring-boot = "3.5.+"
 
 [libraries]
-kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin-gradle-plugin" }
+kotlin-gradle-plugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 k4-state = { module = "dev.forkhandles:state4k", version.ref = "forkhandles" }
 k4-result = { module = "dev.forkhandles:result4k", version.ref = "forkhandles" }
 k4-ropes = { module = "dev.forkhandles:ropes4k", version.ref = "forkhandles" }
 k4-values = { module = "dev.forkhandles:values4k", version.ref = "forkhandles" }
 k4-time4k = { module = "dev.forkhandles:time4k", version.ref = "forkhandles" }
 
+spring-boot-web = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "spring-boot" }
+spring-boot-actuator = { module = "org.springframework.boot:spring-boot-starter-actuator", version.ref = "spring-boot" }
+
 [bundles]
 k4 = ["k4-state", "k4-result", "k4-ropes", "k4-time4k", "k4-values"]
+sb = ["spring-boot-web", "spring-boot-actuator"]
 
+[plugins]
+#spring = { id = "plugin.spring", version.ref = "kotlin" }
+kotlin-spring = { id = "org.jetbrains.kotlin.plugin.spring", version.ref = "kotlin" }
+sb = { id = "org.springframework.boot", version.ref = "spring-boot" }

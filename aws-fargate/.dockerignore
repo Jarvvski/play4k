@@ -1,0 +1,7 @@
+# Ignore everything
+*
+
+# But allow build/libs/ directory for the deployment jar
+!build/
+!build/libs/
+!build/libs/*

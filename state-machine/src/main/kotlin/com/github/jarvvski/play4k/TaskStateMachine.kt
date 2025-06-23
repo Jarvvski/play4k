@@ -11,3 +11,10 @@ val commands = { entity: Task, command: TaskCommands ->
     println("Issuing command $command for $entity")
     Success(Unit)
 }
+
+//val taskStateMachine = StateMachine<
+//        TaskState,
+//        Task,
+//        TaskEvent,
+//        TaskCommands,
+//        String>()

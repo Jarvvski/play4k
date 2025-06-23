@@ -14,3 +14,36 @@
 
 # Outputs
 **/build/
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Terraform directories and lock files
+.terraform/
+.terraform.lock.hcl
+
+# Variable files with secrets
+terraform.tfvars
+*.auto.tfvars
+*.auto.tfvars.json
+secrets.tfvars
+prod.tfvars
+
+# Terraform plan files
+*.tfplan
+out
+
+# Terraform RC files
+.terraformrc
+terraform.rc
+
+# env
+.env
+.env.local

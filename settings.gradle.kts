@@ -6,3 +6,4 @@ rootProject.name = "play4k"
 
 include("state-machine")
 include("utilities")
+include("aws-fargate")
